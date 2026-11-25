@@ -19,10 +19,7 @@ export function Projects() {
               key={photo.src}
               className={`projects__item${photo.featured ? " projects__item--featured" : ""}`}
             >
-              <figure>
-                <img src={photo.src} alt={photo.alt} loading="lazy" width={1600} height={1200} />
-                <figcaption>{photo.caption}</figcaption>
-              </figure>
+              <img src={photo.src} alt={photo.alt} loading="lazy" width={1600} height={1200} />
             </li>
           ))}
         </ul>

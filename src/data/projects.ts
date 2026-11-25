@@ -1,149 +1,79 @@
 export type ProjectPhoto = {
   src: string;
   alt: string;
-  caption: string;
   /** Featured tiles get larger treatment */
   featured?: boolean;
 };
 
 /**
- * Curated Completed Projects gallery.
- * Notes from owner pack: skip near-duplicate video-03; use completed-02 sparingly;
- * completed-07 / 18 / 19 are secondary; video-04 has IRBY overlay — OK carefully.
+ * Curated Completed Projects — flattering side/angle views of finished buildings only.
+ * Removed: roof-only/texture (07, video-07), underside detail (06), mid-work (01, 02),
+ * high roof-dominant aerials (15, 17, 18, 19, video-01), flat gable peak (video-06),
+ * near-dupe video-03. Kept video-04 carefully (side aerial + subtle logo overlay).
  */
 export const projectPhotos: ProjectPhoto[] = [
   {
     src: "/projects/completed-16.jpg",
-    alt: "Golden-hour aerial of covered arena and ranch buildings",
-    caption: "Covered arena — aerial",
+    alt: "Golden-hour aerial side view of covered arena and ranch buildings",
     featured: true,
   },
   {
     src: "/projects/completed-09.jpg",
-    alt: "Finished covered riding arena with open sides and groomed sand floor",
-    caption: "Covered riding arena — completed",
+    alt: "Finished covered riding arena from the front of the sand floor",
     featured: true,
   },
   {
     src: "/projects/completed-05.jpg",
-    alt: "Finished open-sided metal building",
-    caption: "Open-sided metal building",
+    alt: "Finished open-sided metal arena from a flattering angle",
     featured: true,
   },
   {
     src: "/projects/completed-03.jpg",
-    alt: "Finished open-sided barn structure",
-    caption: "Open-sided barn",
-  },
-  {
-    src: "/projects/completed-01.jpg",
-    alt: "Completed metal building project",
-    caption: "Metal building",
+    alt: "Long open-sided metal building side elevation",
   },
   {
     src: "/projects/completed-04.jpg",
-    alt: "Completed steel structure on site",
-    caption: "Steel structure",
-  },
-  {
-    src: "/projects/completed-06.jpg",
-    alt: "Completed covered arena framing and roof",
-    caption: "Arena structure",
+    alt: "Open-sided steel structure full side view",
   },
   {
     src: "/projects/completed-10.jpg",
-    alt: "Covered riding arena exterior view",
-    caption: "Riding arena",
+    alt: "Covered riding arena side angle with arena fencing",
   },
   {
     src: "/projects/completed-11.jpg",
-    alt: "Finished arena and ranch site",
-    caption: "Arena site",
-  },
-  {
-    src: "/projects/completed-12.jpg",
-    alt: "Covered arena from the field",
-    caption: "Field view",
-  },
-  {
-    src: "/projects/completed-13.jpg",
-    alt: "Completed metal building exterior",
-    caption: "Metal building",
+    alt: "Covered arena perspective side view",
   },
   {
     src: "/projects/completed-14.jpg",
-    alt: "Finished barn and steel work",
-    caption: "Barn steel",
+    alt: "Elevated angle of open-sided covered arena",
   },
   {
-    src: "/projects/completed-15.jpg",
-    alt: "Completed covered structure",
-    caption: "Covered structure",
+    src: "/projects/completed-12.jpg",
+    alt: "Aerial side angle of covered arena in pasture",
   },
   {
-    src: "/projects/completed-17.jpg",
-    alt: "Aerial view of completed arena project",
-    caption: "Aerial — arena",
-  },
-  {
-    src: "/projects/completed-video-01.jpg",
-    alt: "Drone frame of covered arena under construction or complete",
-    caption: "Drone — arena",
+    src: "/projects/completed-13.jpg",
+    alt: "Aerial three-quarter view of finished metal arena",
   },
   {
     src: "/projects/completed-video-02.jpg",
-    alt: "Drone frame of completed covered riding arena",
-    caption: "Drone — site",
+    alt: "Drone side view of covered arena at golden hour",
   },
   {
     src: "/projects/completed-video-05.jpg",
-    alt: "Drone frame of ranch metal buildings",
-    caption: "Drone — buildings",
-  },
-  {
-    src: "/projects/completed-video-06.jpg",
-    alt: "Drone overview of completed project site",
-    caption: "Drone — overview",
-  },
-  {
-    src: "/projects/completed-video-07.jpg",
-    alt: "Drone frame of open-sided steel building",
-    caption: "Drone — steel",
+    alt: "Drone side profile of long covered arena",
   },
   {
     src: "/projects/completed-video-08.jpg",
-    alt: "Drone frame of finished metal construction",
-    caption: "Drone — finish",
+    alt: "Drone three-quarter view of finished metal building",
   },
   {
     src: "/projects/completed-video-09.jpg",
-    alt: "Drone frame of covered arena and grounds",
-    caption: "Drone — grounds",
-  },
-  {
-    src: "/projects/completed-18.jpg",
-    alt: "High aerial of completed project property",
-    caption: "High aerial",
-  },
-  {
-    src: "/projects/completed-19.jpg",
-    alt: "High aerial overview of ranch project",
-    caption: "High aerial",
+    alt: "Drone side angle of covered arena and grounds",
   },
   {
     src: "/projects/completed-video-04.jpg",
-    alt: "Drone frame of IRBY completed project with logo overlay",
-    caption: "Project highlight",
-  },
-  {
-    src: "/projects/completed-07.jpg",
-    alt: "Metal roof detail on completed structure",
-    caption: "Roof detail",
-  },
-  {
-    src: "/projects/completed-02.jpg",
-    alt: "In-progress arena work with boom lift on site",
-    caption: "In progress",
+    alt: "Drone side view of completed IRBY arena project",
   },
 ];
 

@@ -26,8 +26,8 @@ export function Hero() {
           Built to last.
         </h1>
         <p className="hero__lede reveal reveal--delay-3">
-          Weld-up covered arenas are our specialty — field fabricated on site, with commercial and prefab
-          buildings when you need them.
+          Weld-up covered arenas are our specialty — field fabricated on site with thicker columns and rafters,
+          plus commercial and prefab buildings when you need them.
         </p>
         <div className="hero__ctas reveal reveal--delay-4">
           <a href={contacts[0].tel} className="btn btn--copper">

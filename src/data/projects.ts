@@ -42,10 +42,6 @@ export const projectPhotos: ProjectPhoto[] = [
     alt: "White metal shop three-quarter front with open bay",
   },
   {
-    src: "/projects/icloud-05.jpg",
-    alt: "White shop end wall with roll-up doors and concrete apron",
-  },
-  {
     src: "/projects/icloud-11.jpg",
     alt: "Covered pavilion on a grassy rise",
   },

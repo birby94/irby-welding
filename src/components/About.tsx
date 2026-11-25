@@ -1,15 +1,16 @@
+import { aboutProjectImage } from "../data/projects";
+
 export function About() {
   return (
     <section id="about" className="section about" aria-labelledby="about-heading">
       <div className="about__grid">
         <div className="about__visual">
           <img
-            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80"
-            alt=""
-            width={1400}
-            height={933}
+            src={aboutProjectImage}
+            alt="Finished open-sided metal building by IRBY Welding + Construction"
+            width={1600}
+            height={1200}
           />
-          <p className="about__photo-note">Placeholder — replace with IRBY crew / job photo</p>
         </div>
 
         <div className="about__copy">

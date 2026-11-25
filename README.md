@@ -30,5 +30,5 @@ npm run preview
 - No quote-form backend.
 - Logo: official PNGs from the IRBY logo pack (`public/logos/`) — horizontal for header/footer, stacked for hero. Never retype IRBY.
 - Headings use **Bebas Neue** as a freely licensed stand-in for **CA Negroni Black**. Body: **Open Sans**.
-- Hero and about imagery are Unsplash placeholders — replace with real IRBY job photos.
+- Hero, About, and Projects gallery use real IRBY completed-project photos in `public/projects/`.
 - Credibility: 40+ years, covered-arena specialty, and notable clients (ranches, horsemen, M&F Western, City of Sulphur Springs, American Legend Aircraft, and more).

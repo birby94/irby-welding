@@ -1,17 +1,18 @@
 import { contacts } from "../contacts";
 import { Logo } from "./Logo";
+import { heroProjectImage } from "../data/projects";
 
-/** Full-bleed brand-first hero. Stock image is a placeholder for real job photos. */
+/** Full-bleed brand-first hero with real IRBY completed-project photography. */
 export function Hero() {
   return (
     <section id="home" className="hero" aria-labelledby="hero-heading">
       <div className="hero__media" aria-hidden="true">
         <img
           className="hero__img"
-          src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=2000&q=80"
+          src={heroProjectImage}
           alt=""
-          width={2000}
-          height={1333}
+          width={1600}
+          height={1200}
         />
         <div className="hero__veil" />
         <div className="hero__grain" />
@@ -37,10 +38,6 @@ export function Hero() {
           </a>
         </div>
       </div>
-
-      <p className="hero__photo-note" aria-hidden="true">
-        Placeholder imagery — replace with IRBY job photos
-      </p>
     </section>
   );
 }

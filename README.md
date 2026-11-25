@@ -32,3 +32,4 @@ npm run preview
 - Body text: **Open Sans**.
 - Logo is a text lockup only (no unofficial symbol recreation, no glow/shadow/stretch/recolor).
 - Hero and about imagery are Unsplash placeholders — replace with real IRBY job photos.
+- Credibility: 40+ years, covered-arena specialty, and notable clients (ranches, horsemen, M&F Western, City of Sulphur Springs, American Legend Aircraft, and more).

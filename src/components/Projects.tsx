@@ -8,17 +8,13 @@ export function Projects() {
           <p className="eyebrow">Completed projects</p>
           <h2 id="projects-heading">Work that stands.</h2>
           <p className="section__lede">
-            Covered riding arenas, open-sided barns, and finished metal buildings — real IRBY jobs from the
-            field.
+            Covered riding arenas and finished metal buildings — real IRBY jobs from the field.
           </p>
         </header>
 
         <ul className="projects__grid">
           {projectPhotos.map((photo) => (
-            <li
-              key={photo.src}
-              className={`projects__item${photo.featured ? " projects__item--featured" : ""}`}
-            >
+            <li key={photo.src} className="projects__item">
               <img src={photo.src} alt={photo.alt} loading="lazy" width={1600} height={1200} />
             </li>
           ))}

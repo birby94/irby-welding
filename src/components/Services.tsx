@@ -1,27 +1,23 @@
-const services = [
+const pillars = [
   {
-    title: "Covered Arenas",
-    copy: "Our specialty. Design-assist, fabrication, and field erection for covered arenas and equine facilities — clear spans, durable framing, and finishes built for real use.",
+    title: "Weld-up covered arenas",
+    copy: "Our specialty. Field-fabricated and assembled covered arenas built for real ranch and equine use — not a catalog kit dropped on a pad.",
   },
   {
-    title: "Structural Welding",
-    copy: "Code-conscious welding for beams, columns, plate, and connections — shop or field. Clean joints, consistent penetration, documented work.",
+    title: "Commercial & prefab buildings",
+    copy: "We also build commercial structures and prefab buildings when the job calls for them — same crew, same steel standards, same direct accountability.",
   },
   {
-    title: "Steel Fabrication",
-    copy: "Cut, fit, and assemble structural and miscellaneous metals to drawing. Frames, platforms, stairs, and custom assemblies ready for the install.",
+    title: "Stronger steel, thicker members",
+    copy: "Heavier columns and rafters than typical light-gauge packages. Built to take weather, load, and years of hard use.",
   },
   {
-    title: "Field Construction",
-    copy: "On-site erection, repair, and modification for ranch, commercial, and industrial sites. Prepared crews, steady schedule, clean handoff.",
+    title: "Built once — on your site",
+    copy: "On-site fabrication and assembly cuts the waste of prefab that gets built twice: once in a plant, then again when it is torn down and put back up. We cut out the middleman so you get the best value.",
   },
   {
-    title: "Repair & Retrofit",
-    copy: "Reinforce, replace, or rework existing steel — including arena frames and ranch structures. Durable fixes that keep operations moving.",
-  },
-  {
-    title: "Mobile Welding",
-    copy: "Bring the shop to the job. Equipment and experienced hands for emergency repairs, plant maintenance, and remote sites.",
+    title: "Our equipment, your savings",
+    copy: "We own our equipment. No hefty rental markups passed through to you — efficiency that shows up in the price and the schedule.",
   },
 ] as const;
 
@@ -31,15 +27,16 @@ export function Services() {
       <div className="section__inner">
         <header className="section__header">
           <p className="eyebrow">What we do</p>
-          <h2 id="services-heading">Arenas first. Steel that lasts.</h2>
+          <h2 id="services-heading">Weld-up covered arenas. Built on site.</h2>
           <p className="section__lede">
-            Forty-plus years of welding and construction — led by covered arena work, backed by structural
-            fabrication and field steel for ranch, commercial, and industrial projects.
+            IRBY specializes in weld-up covered arenas — field fabricated and assembled where they stand. We also
+            do commercial and prefab buildings, with stronger, thicker columns and rafters and cost savings from
+            working on site with our own gear.
           </p>
         </header>
 
         <ul className="services__list">
-          {services.map((s, i) => (
+          {pillars.map((s, i) => (
             <li key={s.title} className="services__item" style={{ ["--i" as string]: i }}>
               <span className="services__index">{String(i + 1).padStart(2, "0")}</span>
               <h3>{s.title}</h3>

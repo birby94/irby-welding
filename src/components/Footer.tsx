@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="site-footer">
       <div className="site-footer__inner">
         <div className="site-footer__brand">
-          <Logo variant="light" />
+          <Logo layout="horizontal" onDark className="brand-logo--footer" />
           <p>Built to last.</p>
         </div>
 

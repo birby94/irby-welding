@@ -1,19 +1,34 @@
 type LogoProps = {
-  variant?: "light" | "dark";
-  compact?: boolean;
+  /** Artwork for dark surfaces (outlined / one-color). Default: black artwork for light surfaces. */
+  onDark?: boolean;
+  /** Horizontal for headers/wide spaces; stacked for tall spaces. */
+  layout?: "horizontal" | "stacked";
+  className?: string;
 };
 
-/** Text lockup matching brand proportions — no glow, shadow, stretch, or recolor effects. */
-export function Logo({ variant = "dark", compact = false }: LogoProps) {
-  const color = variant === "light" ? "var(--white)" : "var(--black)";
-  const descriptor = variant === "light" ? "var(--cool-gray-soft)" : "var(--slate)";
+/**
+ * Official IRBY logo artwork from the brand pack.
+ * Do not retype IRBY — CA Negroni Inline is logo-only and lives in these files.
+ * No stretch, recolor, glow, or shadow treatments.
+ */
+export function Logo({ onDark = false, layout = "horizontal", className = "" }: LogoProps) {
+  const src =
+    layout === "stacked"
+      ? onDark
+        ? "/logos/stacked-on-dark.png"
+        : "/logos/stacked-clr.png"
+      : onDark
+        ? "/logos/horizontal-on-dark.png"
+        : "/logos/horizontal-blk.png";
 
   return (
-    <span className={`logo${compact ? " logo--compact" : ""}`} style={{ color }}>
-      <span className="logo__wordmark">IRBY</span>
-      <span className="logo__descriptor" style={{ color: descriptor }}>
-        Welding + Construction
-      </span>
-    </span>
+    <img
+      className={`brand-logo brand-logo--${layout}${className ? ` ${className}` : ""}`}
+      src={src}
+      alt="IRBY Welding + Construction"
+      width={layout === "stacked" ? 900 : 1400}
+      height={layout === "stacked" ? 804 : 423}
+      decoding="async"
+    />
   );
 }

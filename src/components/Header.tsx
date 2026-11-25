@@ -31,7 +31,7 @@ export function Header() {
     <header className={`site-header${scrolled ? " is-scrolled" : ""}`}>
       <div className="site-header__inner">
         <a href="#home" className="site-header__brand" aria-label="IRBY Welding + Construction home">
-          <Logo variant={scrolled ? "dark" : "light"} />
+          <Logo layout="horizontal" onDark={!scrolled} className="brand-logo--header" />
         </a>
 
         <nav className="site-header__nav" aria-label="Primary">

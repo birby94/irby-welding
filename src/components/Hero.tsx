@@ -1,4 +1,5 @@
 import { contacts } from "../contacts";
+import { Logo } from "./Logo";
 
 /** Full-bleed brand-first hero. Stock image is a placeholder for real job photos. */
 export function Hero() {
@@ -17,8 +18,9 @@ export function Hero() {
       </div>
 
       <div className="hero__content">
-        <p className="hero__brand reveal">IRBY</p>
-        <p className="hero__descriptor reveal reveal--delay-1">Welding + Construction</p>
+        <div className="hero__logo reveal">
+          <Logo layout="stacked" onDark className="brand-logo--hero" />
+        </div>
         <h1 id="hero-heading" className="hero__headline reveal reveal--delay-2">
           Built to last.
         </h1>

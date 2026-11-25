@@ -28,8 +28,7 @@ npm run preview
 
 - Single-page marketing site (Home, Services, About, Contact sections).
 - No quote-form backend.
-- Display type uses **Bebas Neue** as a freely licensed stand-in for **CA Negroni** (brand display face). Swap when CA Negroni is licensed.
-- Body text: **Open Sans**.
-- Logo is a text lockup only (no unofficial symbol recreation, no glow/shadow/stretch/recolor).
+- Logo: official PNGs from the IRBY logo pack (`public/logos/`) — horizontal for header/footer, stacked for hero. Never retype IRBY.
+- Headings use **Bebas Neue** as a freely licensed stand-in for **CA Negroni Black**. Body: **Open Sans**.
 - Hero and about imagery are Unsplash placeholders — replace with real IRBY job photos.
 - Credibility: 40+ years, covered-arena specialty, and notable clients (ranches, horsemen, M&F Western, City of Sulphur Springs, American Legend Aircraft, and more).

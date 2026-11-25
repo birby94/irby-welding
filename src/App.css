@@ -78,30 +78,32 @@
   transform: translateY(-2px);
 }
 
-/* —— Logo text lockup (no effects) —— */
-.logo {
-  display: inline-flex;
-  flex-direction: column;
-  line-height: 1;
-  gap: 0.15rem;
+/* —— Official logo artwork (no effects / no recolor) —— */
+.brand-logo {
+  display: block;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  /* Brand rules: no stretch, recolor, glow, or shadow */
+  filter: none;
+  box-shadow: none;
+  object-fit: contain;
 }
 
-.logo__wordmark {
-  font-family: var(--font-display);
-  font-size: 1.85rem;
-  letter-spacing: 0.08em;
+.brand-logo--header {
+  width: clamp(9.5rem, 22vw, 13.5rem);
+  height: auto;
 }
 
-.logo__descriptor {
-  font-family: var(--font-body);
-  font-size: 0.625rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+.brand-logo--footer {
+  width: clamp(11rem, 28vw, 16rem);
+  height: auto;
 }
 
-.logo--compact .logo__wordmark {
-  font-size: 1.5rem;
+.brand-logo--hero {
+  width: clamp(11rem, 42vw, 22rem);
+  height: auto;
+  margin: 0;
 }
 
 /* —— Header —— */
@@ -346,22 +348,8 @@
   padding: calc(var(--header-h) + 2rem) var(--space-md) var(--space-xl);
 }
 
-.hero__brand {
-  font-family: var(--font-display);
-  font-size: clamp(4.5rem, 16vw, 9.5rem);
-  letter-spacing: 0.06em;
-  line-height: 0.85;
-  margin: 0;
-}
-
-.hero__descriptor {
-  font-family: var(--font-body);
-  font-size: clamp(0.8rem, 1.6vw, 1rem);
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--cool-gray-soft);
-  margin: 0.35rem 0 1.5rem;
+.hero__logo {
+  margin: 0 0 1.5rem;
 }
 
 .hero__headline {

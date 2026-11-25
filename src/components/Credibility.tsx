@@ -6,7 +6,7 @@ const highlights = [
 
 /** Tasteful client mention — not a crowded name dump. */
 const clientLine =
-  "Trusted by ranches, horsemen, and local partners including 6666 Ranch, Taylor Sheridan, Bosque Ranch, Queens Horse Bedding, Ryan Motes, Lee Deacon, Shawn Hayes, Diego Gaona, Mark Michels, Rob Foster, M&F Western, City of Sulphur Springs, American Legend Aircraft, and many more.";
+  "Trusted by ranches, horsemen, and local partners including 6666 Ranch, Crossbell Ranch, Taylor Sheridan, Bosque Ranch, Queens Horse Bedding, Ryan Motes, Lee Deacon, Shawn Hayes, Diego Gaona, Mark Michels, Rob Foster, M&F Western, City of Sulphur Springs, American Legend Aircraft, and many more.";
 
 export function Credibility() {
   return (

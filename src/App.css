@@ -563,86 +563,6 @@
   }
 }
 
-/* —— About —— */
-.about {
-  padding: 0;
-  background: var(--slate);
-  color: var(--white);
-}
-
-.about__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  min-height: 36rem;
-}
-
-.about__visual {
-  position: relative;
-  min-height: 18rem;
-  overflow: hidden;
-}
-
-.about__visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.about__copy {
-  padding: var(--space-xl) var(--space-md);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 36rem;
-}
-
-.about__copy h2 {
-  font-size: clamp(2.75rem, 5vw, 4rem);
-  margin-bottom: var(--space-md);
-}
-
-.about__copy p {
-  color: var(--cool-gray-soft);
-  margin-bottom: 1rem;
-}
-
-.about__points {
-  list-style: none;
-  margin: 1.25rem 0 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
-}
-
-.about__points li {
-  position: relative;
-  padding-left: 1.25rem;
-  font-weight: 600;
-  font-size: 0.95rem;
-}
-
-.about__points li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.55em;
-  width: 0.55rem;
-  height: 2px;
-  background: var(--copper);
-}
-
-@media (min-width: 900px) {
-  .about__grid {
-    grid-template-columns: 1.05fr 1fr;
-  }
-
-  .about__copy {
-    padding: var(--space-2xl) var(--space-xl);
-  }
-}
-
 /* —— Projects gallery —— */
 .projects {
   background: var(--white);
@@ -659,35 +579,13 @@
 
 .projects__item {
   margin: 0;
-  overflow: hidden;
-  background: var(--slate-ink);
+  background: #e8e9ea;
 }
 
 .projects__item img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  object-position: center 55%;
+  height: auto;
   display: block;
-  transition: transform 0.55s var(--ease-out);
-}
-
-.projects__item:hover img {
-  transform: scale(1.03);
-}
-
-.projects__item--featured {
-  grid-column: 1 / -1;
-}
-
-.projects__item--featured img {
-  aspect-ratio: 16 / 10;
-  object-position: center 45%;
-}
-
-.projects__item--featured:nth-child(2) img {
-  /* Ground-level arena shot — bias down to keep the building in frame */
-  object-position: center 70%;
 }
 
 @media (min-width: 700px) {
@@ -695,39 +593,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 1.25rem;
   }
-
-  .projects__item--featured:nth-child(1) {
-    grid-column: 1 / -1;
-  }
-
-  .projects__item--featured:nth-child(2),
-  .projects__item--featured:nth-child(3) {
-    grid-column: span 1;
-  }
-
-  .projects__item--featured:nth-child(2) img,
-  .projects__item--featured:nth-child(3) img {
-    aspect-ratio: 4 / 3;
-  }
 }
 
 @media (min-width: 1000px) {
   .projects__grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .projects__item--featured:nth-child(1) {
-    grid-column: 1 / span 2;
-  }
-
-  .projects__item--featured:nth-child(1) img {
-    aspect-ratio: 16 / 10;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .projects__item:hover img {
-    transform: none;
   }
 }
 

@@ -3,7 +3,6 @@ import { Hero } from "./components/Hero";
 import { Credibility } from "./components/Credibility";
 import { Services } from "./components/Services";
 import { Projects } from "./components/Projects";
-import { About } from "./components/About";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import "./App.css";
@@ -20,7 +19,6 @@ export default function App() {
         <Credibility />
         <Services />
         <Projects />
-        <About />
         <Contact />
       </main>
       <Footer />

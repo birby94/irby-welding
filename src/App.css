@@ -697,11 +697,12 @@
 
 .projects__item--featured img {
   aspect-ratio: 16 / 10;
-  object-position: center 72%;
+  object-position: center 45%;
 }
 
-.projects__item--featured:nth-child(1) img {
-  object-position: center 78%;
+.projects__item--featured:nth-child(2) img {
+  /* Ground-level arena shot — bias down to keep the building in frame */
+  object-position: center 70%;
 }
 
 @media (min-width: 700px) {

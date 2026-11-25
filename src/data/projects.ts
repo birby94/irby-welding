@@ -13,15 +13,15 @@ export type ProjectPhoto = {
  */
 export const projectPhotos: ProjectPhoto[] = [
   {
-    src: "/projects/completed-09.jpg",
-    alt: "Finished covered riding arena with open sides and groomed sand floor",
-    caption: "Covered riding arena — completed",
-    featured: true,
-  },
-  {
     src: "/projects/completed-16.jpg",
     alt: "Golden-hour aerial of covered arena and ranch buildings",
     caption: "Covered arena — aerial",
+    featured: true,
+  },
+  {
+    src: "/projects/completed-09.jpg",
+    alt: "Finished covered riding arena with open sides and groomed sand floor",
+    caption: "Covered riding arena — completed",
     featured: true,
   },
   {

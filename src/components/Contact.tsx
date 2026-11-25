@@ -8,7 +8,7 @@ export function Contact() {
           <p className="eyebrow">Contact</p>
           <h2 id="contact-heading">Ready when you are.</h2>
           <p className="section__lede">
-            Call Brian or Richard to discuss scope, schedule, and site needs. Marketing site only — no online quote form.
+            Call Brian or Richard to discuss scope, schedule, and site needs.
           </p>
         </header>
 

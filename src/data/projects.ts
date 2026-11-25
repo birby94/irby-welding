@@ -58,16 +58,8 @@ export const projectPhotos: ProjectPhoto[] = [
     alt: "Long metal building side elevation",
   },
   {
-    src: "/projects/completed-04.jpg",
-    alt: "Steel structure full side view",
-  },
-  {
     src: "/projects/completed-10.jpg",
     alt: "Covered riding arena side angle with arena fencing",
-  },
-  {
-    src: "/projects/completed-11.jpg",
-    alt: "Covered arena perspective side view",
   },
   {
     src: "/projects/completed-14.jpg",
